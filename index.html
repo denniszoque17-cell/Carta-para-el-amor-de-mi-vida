@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Ashlyn</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(135deg, #fce4ec, #f8bbd0, #f48fb1);
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .carta {
+      background: white;
+      padding: 40px;
+      max-width: 600px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      text-align: justify;
+      line-height: 1.7;
+      animation: fadeIn 2s ease-in-out;
+    }
+    h1 {
+      text-align: center;
+      color: #d81b60;
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 15px;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <div class="carta">
+    <h1>Para Ashlyn</h1>
+    <p>Querida Ashlyn,</p>
+    <p>Sé que ha pasado mucho tiempo desde la última vez, pero aun así siento la necesidad de escribirte. No dejo de pensar en lo que sucedió entre nosotros, en lo mal que hice las cosas y en cómo, sin querer, terminé alejándote.</p>
+    <p>Es cierto que no llegamos a conocernos tanto como hubiéramos querido, pero aun con lo poco que compartimos, dejaste una huella en mí que no se ha borrado. A pesar del tiempo y la distancia, sigo extrañándote.</p>
+    <p>No pretendo justificarme, ni obligarte a nada. Solo quiero pedirte perdón, de corazón, por lo que hice y por lo que no supe hacer. Tal vez no merezca tu perdón, pero me gustaría que al menos supieras que sigo arrepentido y que, de alguna forma, aún te llevo conmigo.</p>
+    <p style="text-align:right;">Con cariño,<br>Alexander</p>
+  </div>
+
+  <!-- Script para registrar la visita solo para ti -->
+  <script>
+    fetch('https://docs.google.com/forms/d/e/1FAIpQLSf5tVis9i7s_DKdnnRWqUcmkAPy2jckym8Ez4HSvj98no70nw/formResponse', {
+      method: 'POST',
+      mode: 'no-cors',
+      body: new URLSearchParams({
+        'entry.123456789': 'Ashlyn abrió la carta'
+      })
+    });
+  </script>
+</body>
+</html>
